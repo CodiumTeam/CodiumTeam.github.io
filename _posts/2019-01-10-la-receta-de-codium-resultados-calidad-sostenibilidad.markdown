@@ -3,6 +3,7 @@ layout: post
 title:  "La receta de Codium: resultados, calidad y sostenibilidad"
 date:   2019-01-10 11:30:24 +0100
 categories: codium
+read_time : 4
 ---
 
 **Codium** es el nombre de la empresa que Luis Rovirosa y Jordi Anguela decidimos lanzar en 2017.Con más de 10 años de experiencia a nuestras espaldas, la idea que nos unía estaba clara: “_Tenemos los conocimientos para ayudar a las empresas a mejorar su código, tenemos un sistema de trabajo que sabemos que funciona y nos gusta enseñar, seamos **mentores**_”. Sin embargo, pronto entendimos que la formación debía ser solo una parte del negocio, ya que algunos clientes nos llamaban para pedirnos ayuda como asesores externos o para sacar un tapón de trabajo con su código. Así surgieron lo que son las tres partes del modelo de negocio de Codium: la formación, el acompañamiento de empresas y el desarrollo web.
