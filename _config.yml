@@ -32,12 +32,16 @@ permalink: /:year-:month_:title
 
 # Writer
 nav_list:
-    Home : ['Home', '/', 'fa-home']
-    Home_Alt : ['Home Alt', '/home-alt', 'fa-home']
-    Home_Alt_2 : ['Home Alt 2', '/home-alt-2/', 'fa-home']
-    About : ['About', '/about', 'fa-anchor']
-    Contact : ['Contact', '/contact', 'fa-plane']
-    Author : ['Author', '/author/michelle', 'fa-user']
+    Blog : ['Blog', '/', 'fa-book']
+    Codium : ['Web de Codium', 'https://www.codium.team', 'fa-home']
+    Valores : ['Valores de Codium', 'https://www.codium.team#values', 'fa-heart']
+    Servicios : ['Servicios de Codium', 'https://www.codium.team#services', 'fa-star']
+    TDD: ['Curso de TDD', 'https://www.codium.team/curso-tdd.html', 'fa-graduation-cap']
+    LegacyCode : ['Curso de Legacy Code', 'https://www.codium.team/curso-legacy-code.html', 'fa-graduation-cap']
+    Acompañamiento : ['Acompañamiento', 'https://www.codium.team/#acompanamiento', 'fa-users']
+    MVP : ['Desarrollo de MVP', 'https://www.codium.team/#desarrollo', 'fa-gift']
+    Equipo Codium : ['Equipo Codium', 'https://www.codium.team/#sobre-nosotros', 'fa-users']
+
 single_footer: '<p>The writer community loves your content. Writer &copy; 2016 <a href="/">latest posts</a></p>'
 footer_links:
     About: ['About', '/about']
