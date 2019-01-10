@@ -5,8 +5,26 @@
         </div>
         <div class="col-xs-12 col-sm-6">
             <div class="category-list">
-                <p>Published <span>{{ page.date | date: "%b %-d, %Y" }}</span></p>
-                <p><a href="{{ page.author_url  | prepend: site.baseurl }}">{{ page.author_name | capitalize }}</a> in <a href='{{ "/category/" | append: page.categories.first | prepend: site.baseurl }}'>{{ page.categories.first | capitalize }}</a></p>
+                <p>Publicado <span>
+                {{ page.date | date: "%-d" }} de
+                {% assign m = page.date | date: "%-m" %}
+                {% case m %}
+                    {% when '1' %}Enero
+                    {% when '2' %}Febrero
+                    {% when '3' %}Marzo
+                    {% when '4' %}Abril
+                    {% when '5' %}Mayo
+                    {% when '6' %}Junio
+                    {% when '7' %}Julio
+                    {% when '8' %}Augosto
+                    {% when '9' %}Septiembre
+                    {% when '10' %}Octubre
+                    {% when '11' %}Noviembre
+                    {% when '12' %}Diciembre
+                {% endcase %} del
+                {{ page.date | date: "%Y" }}
+                </span></p>
+                <p><a href="{{ page.author_url  | prepend: site.baseurl }}">{{ page.author_name | capitalize }}</a> en <a href='{{ "/category/" | append: page.categories.first | prepend: site.baseurl }}'>{{ page.categories.first | capitalize }}</a></p>
 
                 <div class="other-catergories">
                     <h3>Also found in</h3>
