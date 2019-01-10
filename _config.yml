@@ -18,7 +18,7 @@ email: info@codium.team
 description: >- # this means to ignore newlines until "baseurl:"
     Codium - Formamos y acompañamos equipos de programación - Resultados, calidad y sostenibilidad
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://codiumteam.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://blog.codium.team" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: CodiumTeam
 github_username:  CodiumTeam
 
