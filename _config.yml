@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Codium Blog
+title: Blog de Codium
 email: info@codium.team
 description: >- # this means to ignore newlines until "baseurl:"
     Codium - Formamos y acompañamos equipos de programación - Resultados, calidad y sostenibilidad
