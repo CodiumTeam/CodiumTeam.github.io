@@ -35,7 +35,7 @@ nav_list:
     Blog : ['Blog', '/', 'fa-book']
     Codium : ['Web de Codium', 'https://www.codium.team', 'fa-home']
     Valores : ['Valores de Codium', 'https://www.codium.team#values', 'fa-heart']
-    Servicios : ['Servicios de Codium', 'https://www.codium.team#services', 'fa-star']
+    Servicios : ['Servicios de Codium', 'https://www.codium.team#servicios', 'fa-star']
     TDD: ['Curso de TDD', 'https://www.codium.team/curso-tdd.html', 'fa-graduation-cap']
     LegacyCode : ['Curso de Legacy Code', 'https://www.codium.team/curso-legacy-code.html', 'fa-graduation-cap']
     Acompañamiento : ['Acompañamiento', 'https://www.codium.team/#acompanamiento', 'fa-users']
