@@ -72,6 +72,8 @@ var s,
 
             } else if(platform == 'facebook'){
                 popUrl = 'http://www.facebook.com/share.php?u=' + url + '&amp;title=' + encodeURI(message);
+            } else if(platform == 'linkedin'){
+                popUrl = 'https://www.linkedin.com/sharing/share-offsite/?url=' + url;
             }
             newWindow = window.open(popUrl,'name','height=500,width=600');
             if (window.focus) { newWindow.focus(); }
