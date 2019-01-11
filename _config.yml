@@ -32,7 +32,7 @@ permalink: /:year-:month_:title
 
 # Writer
 nav_list:
-    Blog : ['Blog', '/', 'fa-book']
+    Blog : ['Home del Blog', '/', 'fa-book']
     Codium : ['Web de Codium', 'https://www.codium.team', 'fa-home']
     Valores : ['Valores de Codium', 'https://www.codium.team#values', 'fa-heart']
     Servicios : ['Servicios de Codium', 'https://www.codium.team#servicios', 'fa-star']
