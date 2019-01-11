@@ -24,6 +24,9 @@
 
 @import "nojs"
 
+$brand-color: #0aa0f4
+$brand-secondary-color: #0000cd
+
 .left-container
     margin-left: 15px
     padding-left: 0
@@ -63,12 +66,12 @@ main
 
 
 a
-    color: #999999
+    color: $brand-color
     text-decoration: none
 
     &:hover,
     &:active,
     &:focus
         text-decoration: none
-        color: #333
-        border-bottom: solid 1px #999
+        color: $brand-secondary-color
+        border-bottom: solid 1px $brand-secondary-color
