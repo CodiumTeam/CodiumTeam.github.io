@@ -5,7 +5,7 @@ date:   2019-01-15 17:00:00 +0100
 categories: codium
 feature_image: post-assets/entrevista-luis
 
-read_time : 6
+read_time : 5
 ---
 
 Esta semana entrevistamos a Luis Rovirosa, fundador de Codium junto a Jordi Anguela, para conocer mejor a uno de los mentores de la empresa. 
