@@ -35,7 +35,7 @@ Otra cosa que para mí es clave en la formación es que el profesor tenga experi
 
 Quiźa lo que nos diferencia de muchas empresas de formación es que siempre somos dos profesores los que impartimos el curso, de forma que podemos atender de manera más personalizada a las necesidades de cada alumno.
 
-## ¿Qué ventajas tiene la TDD respecto a otras prácticas de programación? 
+## ¿Qué ventajas tiene TDD respecto a otras prácticas de programación? 
 Una de las cosas que más me gusta de TDD es que hace el software moldeable, ya que aumenta la seguridad de modificar el software sin introducir fallos. Ésto permite que hagamos muchos más refactorings para reducir la complejidad del software y los costes de mantenimiento.
 
 El segundo pilar que me aporta TDD es poderme centrar en los problemas actuales y no en los futuros. Con esto conseguimos reducir la complejidad, los tiempos y el coste de desarrollo.
