@@ -17,7 +17,7 @@ Pero no solo eso, en términos estrictamente económicos, el coste de la formaci
 
 Pero, ¿cómo saber en qué tipo de formación invertir? Si estás en el mundo del desarrollo de software, puedes invertir en aprender las últimas novedades del framework o, por el contrario, en los cimientos de la programación. Nosotros apostamos firmemente por lo segundo, pues son inversiones a las que les podemos sacar un beneficio más tiempo.
 
->_Puedes aprender las últimas novedades del framework o en los cimientos de la programación. Nosotros apostamos por lo segundo._
+>_Puedes invertir en aprender el último framework o en los cimientos de la programación. Nosotros apostamos por lo segundo._
 
 El momento culminante es cuando la formación se convierte en cultura de empresa. Es decir, cuando la formación ya se ha interiorizado y  no depende de personas concretas que tiren del carro,  ya que toda persona que se incorpora al equipo se empapa de esta forma de trabajar  en muy poco tiempo. En resumen, invertir en formación es apostar por el futuro de tu empresa.
  
