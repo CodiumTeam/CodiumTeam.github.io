@@ -35,13 +35,12 @@ permalink: /:year-:month_:title
 nav_list:
     Blog : ['Home del Blog', '/', 'fa-book']
     Codium : ['Web de Codium', 'https://www.codium.team', 'fa-home']
-    Valores : ['Valores de Codium', 'https://www.codium.team#values', 'fa-heart']
-    Servicios : ['Servicios de Codium', 'https://www.codium.team#servicios', 'fa-star']
     TDD: ['Curso de TDD', 'https://www.codium.team/curso-tdd.html', 'fa-graduation-cap']
     LegacyCode : ['Curso de Legacy Code', 'https://www.codium.team/curso-legacy-code.html', 'fa-graduation-cap']
-    Acompañamiento : ['Acompañamiento', 'https://www.codium.team/#acompanamiento', 'fa-users']
-    MVP : ['Desarrollo de MVP', 'https://www.codium.team/#desarrollo', 'fa-gift']
     Equipo Codium : ['Equipo Codium', 'https://www.codium.team/#sobre-nosotros', 'fa-users']
+    Newsletter: ['Newsletter', 'https://team.us20.list-manage.com/subscribe?u=13d69f9b710506811a9c84ffc&id=eccad064f9', 'fa-newspaper-o']
+    Twitter: ['Follow us', 'https://twitter.com/codiumteam', 'fa-twitter']
+    Youtube: ['Subscribe', 'https://www.youtube.com/channel/UC_G24eVjh5ZBownNfIh2lxw', 'fa-youtube']
 
 single_footer: '<p>The writer community loves your content. Writer &copy; 2016 <a href="/">latest posts</a></p>'
 #footer_links:
