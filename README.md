@@ -4,5 +4,5 @@ Local installation
 
 To run the Jekyll with auto reload
 
-    bundle exec jekyll serve --future
+    bundle exec jekyll serve --future --livereload
     
