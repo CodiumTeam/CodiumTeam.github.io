@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "La esencia del desarollo de software ágil"
+title:  "La esencia del desarrollo de software ágil"
 date:   2019-05-27 14:00:00 +0100
 categories: codium
 feature_image: post-assets/water
@@ -8,7 +8,7 @@ feature_image: post-assets/water
 read_time : 5
 ---
  
-En junio de 2018 [Martin Fowler](https://twitter.com/martinfowler) impartió 3 mini charlas en Madrid y hubo una slide que realmente me impactó:
+En junio de 2018 [Martin Fowler](https://twitter.com/martinfowler) impartió 3 mini charlas en Madrid y hubo una transparencia que realmente me impactó:
  
 ![Responsive features slide](img/post-assets/martin-fowler.jpg)
 
@@ -32,7 +32,7 @@ Cuando llego a un código que me parece complejo de entender mi cuerpo me suele 
 
 Los tests me permiten darme cuenta si cometo algún error mientras estoy haciendo refactoring. Es ese feedback rápido el que me da seguridad. 
 
-Si tengo un harnés de tests, que garantizan que el código se comporta como espero, puedo hacer refáctorings más profundos. Cambios como cambiar la firma de los métodos, extraer comportamiento a colaboradores para reusarlo, borrar código, actualizar versiones, reemplazo de librerías...
+Si tengo un arnés de tests, que garantizan que el código se comporta como espero, puedo hacer refáctorings más profundos. Cambios como cambiar la firma de los métodos, extraer comportamiento a colaboradores para reusarlo, borrar código, actualizar versiones, reemplazo de librerías...
 
 Por el contrario, si no tengo un harnés de tests tiendo a hacer refáctorings suaves. Por ejemplo aquellos que confío que el IDE hace bien: rename, extract, move method...
 
