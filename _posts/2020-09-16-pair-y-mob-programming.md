@@ -6,7 +6,7 @@ author: Luis Rovirosa Mairlot
 categories: codium
 feature_image: post-assets/pair-programming
 
-read_time : 5
+read_time : 3
 ---
  
 El pair programming es la acción de programar simultáneamente dos personas utilizando un mismo ordenador.
