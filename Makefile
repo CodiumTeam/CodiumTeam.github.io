@@ -1,4 +1,4 @@
-DOCKER_COMMAND = docker run --rm -v ${PWD}:/srv/jekyll
+DOCKER_COMMAND = docker run --rm -v ${PWD}:/srv/jekyll -v ${PWD}/vendor/bundle:/usr/local/bundle
 
 build:
 	$(DOCKER_COMMAND) jekyll/jekyll:3.8 jekyll build
