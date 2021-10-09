@@ -3,6 +3,7 @@ layout: post
 title:  "Beneficios de formar a tu equipo"
 date:   2019-02-14 09:00:00 +0100
 categories: codium
+author: Codium
 feature_image: post-assets/formacion
 
 read_time : 2

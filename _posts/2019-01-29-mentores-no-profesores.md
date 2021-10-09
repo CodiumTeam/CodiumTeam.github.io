@@ -3,6 +3,7 @@ layout: post
 title:  "Mentores, no profesores"
 date:   2019-01-29 19:00:00 +0100
 categories: codium
+author: Codium
 feature_image: post-assets/mentoring
 
 read_time : 2

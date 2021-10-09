@@ -3,6 +3,7 @@ layout: post
 title:  "Entrevista a Luis Rovirosa"
 date:   2019-01-15 17:00:00 +0100
 categories: codium
+author: Codium
 feature_image: post-assets/entrevista-luis
 
 read_time : 5
