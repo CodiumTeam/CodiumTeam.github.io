@@ -3,7 +3,7 @@ layout: post
 title:  "Entrevista a Jordi Anguela"
 date:   2019-01-23 08:00:00 +0100
 categories: codium
-author: Codium
+author: codium
 feature_image: post-assets/entrevista-jordi
 
 read_time : 5

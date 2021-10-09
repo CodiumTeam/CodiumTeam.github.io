@@ -60,3 +60,6 @@ single_footer: '<p>The writer community loves your content. Writer &copy; 2016 <
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+collections:
+  authors:

@@ -2,7 +2,7 @@
 layout: post
 title:  "Pair y mob programming"
 date:   2020-09-16 09:00:00 +0100
-author: Luis Rovirosa Mairlot
+author: luis
 categories: codium
 feature_image: post-assets/pair-programming
 
