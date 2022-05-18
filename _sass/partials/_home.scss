@@ -35,3 +35,11 @@
 .gist-meta {
   display: none;
 }
+
+.gist .gist-data {
+  border-bottom: none !important;
+}
+
+.gist .gist-file {
+  border-radius: 0 !important;
+}
