@@ -2,47 +2,47 @@
 layout: with-sidebar
 ---
 
-<!--<div class="sub-nav">-->
-    <!--<a href="#" class="select-posts active">Posts</a>-->
-    <!--<a href="#" class="select-categories">Categories</a>-->
-<!--</div>-->
-
 <div class="home-page-posts animated fadeIn ">
     {% for post in site.posts %}
 
     <article class="post">
         <div class="post-preview col-xs-10  no-gutter">
+            {% assign author = site.authors | where: 'short_name', post.author | first %}
+
+            <p class="home-post__meta">
+                <img src='{{ author.avatar }}' alt="{{ author.name | titleize}} profile">
+                <span>
+                    {{ author.name | titleize}}
+                </span>
+            </p>
+
             <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 
-            {{ post.excerpt | truncatewords: 28 }}
+            <div class="excerpt">
+                {{ post.excerpt | truncatewords: 28 }}
+            </div>
 
-            {% assign author = site.authors | where: 'short_name', post.author | first %}
-            <p class="meta">
-                {{ author.name | titleize}}</a> <i class="link-spacer"></i> <i class="fa fa-bookmark"></i> {{ post.read_time }} minutos
+            <p class="post-footer">
+                {{ post.date | date: "%-d" }} de
+                {% assign m = post.date | date: "%-m" %}
+                {% case m %}
+                    {% when '1' %}Enero
+                    {% when '2' %}Febrero
+                    {% when '3' %}Marzo
+                    {% when '4' %}Abril
+                    {% when '5' %}Mayo
+                    {% when '6' %}Junio
+                    {% when '7' %}Julio
+                    {% when '8' %}Augosto
+                    {% when '9' %}Septiembre
+                    {% when '10' %}Octubre
+                    {% when '11' %}Noviembre
+                    {% when '12' %}Diciembre
+                {% endcase %}
+                </a> <i class="link-spacer"></i> {{ post.read_time }} minutos de lectura
             </p>
         </div>
-
-
-        {% if post.show_avatar == true %}
-        <div class=" col-xs-2  no-gutter">
-            <img src="{{ site.baseurl}}/img/{{ post.author_avatar }}.jpg" class="user-icon user-1" alt="user-image">
-        </div>
-        {% endif %}
     </article>
     {% endfor %}
 
 </div><!-- Home page posts -->
-
-<div class="home-page-categories hide animated fadeIn ">
-    <div class="category row">
-        <section>
-            {% for category in site.categories %}
-
-                <div class="category-preview col-xs-6 col-sm-4 ">
-                    <h2>{{ category | first | capitalize }}</h2>
-                    <a href='{{ "/category/" | append: category.first | prepend: site.baseurl }}'><img src='{{ "/img/" | append: category.first | prepend: site.baseurl }}-thumbnail.jpg' alt="category-image"></a>
-                </div>
-            {% endfor %}
-        </section>
-    </div>
-</div>

@@ -15,7 +15,6 @@
 		display: inline-block
 		margin-right: 10px
 		line-height: 30px
-		font-family: $sans
 		letter-spacing: 2pt
 		text-decoration: none
 		color: $light-grey
@@ -37,6 +36,7 @@
 
 		h2
 			margin-top: 0
+			font-weight: 700
 			+font-size(24)
 
 			+breakpoint(md)
@@ -50,8 +50,8 @@
 				&:hover
 					color: $light-grey
 		p
-			font-family: $serif
 			+font-size(16)
+			color: rgba(117, 117, 117, 1)
 
 			+breakpoint(md)
 				+font-size(18)
@@ -82,7 +82,6 @@
 	padding: 10px 0
 	+font-size(11)
 	letter-spacing: 1px
-	font-family: $sans
 	+up-bold
 
 	a
