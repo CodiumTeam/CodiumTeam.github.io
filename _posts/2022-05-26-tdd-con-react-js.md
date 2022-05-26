@@ -360,6 +360,53 @@ Los cambios que podemos hacer son:
    return (
 ```
 
+<h4>Código final</h4>
+
+```jsx
+
+const DRINKS = {
+  Coffee: 'C',
+};
+
+function CoffeeMachine() {
+  const [command, setCommand] = useState('');
+  const [numberOfSugars, setNumberOfSugars] = useState(0);
+
+  const addSugar = () => {
+    setNumberOfSugars(numberOfSugars + 1);
+  };
+
+  const prepareDrink = () => {
+    const numSugarText = numberOfSugars ? numberOfSugars.toString() : '';
+    const stickText = numberOfSugars === 0 ? '' : '0';
+
+    setCommand(`${DRINKS.Coffee}:${numSugarText}:${stickText}`);
+  };
+
+  return (
+    <MachineWrapper>
+      <DrinksBlock>
+        <ColumnsButtonsGroup>
+          <Button text="Coffee" />
+        </ColumnsButtonsGroup>
+      </DrinksBlock>
+
+      <RightPanel>
+        <div>
+          <SmallButton text="+" onClick={addSugar} />
+        </div>
+
+        <Button text="Start" onClick={prepareDrink} />
+      </RightPanel>
+
+      <div className="output">
+        <DrinkMakerBox command={command} />
+      </div>
+    </MachineWrapper>
+  );
+}
+```
+
 <h4>¿Cómo continuar?</h4>
 
 Hemos aplicado TDD en React utilizando Jest y Testing-library y sólo hemos cubierto un caso “Selección de bebida (café) con y sin azúcar”.
