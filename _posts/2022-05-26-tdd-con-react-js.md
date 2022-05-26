@@ -341,7 +341,7 @@ Los cambios que podemos hacer son:
 +++ b/src/CoffeeMachine.js
 @@ -7,6 +7,10 @@
 
-+const DRINKS = {
++ const DRINKS = {
 +  Coffee: 'C',
 +};
 +
