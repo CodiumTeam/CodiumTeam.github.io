@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "TDD con React JS"
+title:  "TDD en React JS"
 date:   2022-05-26 08:00:00 +0100
 author: jose
 categories: codium
