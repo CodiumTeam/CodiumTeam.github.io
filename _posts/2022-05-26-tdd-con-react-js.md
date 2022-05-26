@@ -11,6 +11,9 @@ read_time : 6
 
 Vamos a ver con un poco más en detalle lo que implica trabajar aplicando la metodología TDD en un proyecto “real” en ReactJS.
 
+> Esta es la segunda parte de Desarrollo basado en pruebas (TDD). Puedes encontrar la primera parte en <a href="/2022-05_que-es-tdd">¿Qué es TDD?</a>.
+
+
 Para ésta explicación utilizaré la Coffee Machine. Ésta kata la que utilizamos en el curso de TDD y en concreto la veremos con JavaScript.
 
 La Coffee Machine kata se hace en 5 iteraciones, la primera de ellas consiste en preparar las bebidas. Las siguientes iteraciones van añadiendo funcionalidades nuevas que ponen a prueba las decisiones que hemos ido tomando. En éste post trabajaremos tan sólo la primera iteración.
