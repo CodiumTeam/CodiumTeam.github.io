@@ -1,52 +1,75 @@
 <div class="container">
-    <div class="row">
-        <div class="col-xs-12 col-sm-2">
-            {% if page.author_avatar %}
-                <img src="{{ site.baseurl }}/img/{{ page.author_avatar }}.jpg" class="user-icon " alt="user-image">
-            {% else %}
-                <img src="{{ site.baseurl }}/img/codium-icon-black-256x256.png" class="user-icon " alt="user-image">
-            {% endif %}
-        </div>
-        <div class="col-xs-12 col-sm-6">
-            <div class="category-list">
-                <p>Publicado <span>
-                {{ page.date | date: "%-d" }} de
-                {% assign m = page.date | date: "%-m" %}
-                {% case m %}
-                    {% when '1' %}Enero
-                    {% when '2' %}Febrero
-                    {% when '3' %}Marzo
-                    {% when '4' %}Abril
-                    {% when '5' %}Mayo
-                    {% when '6' %}Junio
-                    {% when '7' %}Julio
-                    {% when '8' %}Augosto
-                    {% when '9' %}Septiembre
-                    {% when '10' %}Octubre
-                    {% when '11' %}Noviembre
-                    {% when '12' %}Diciembre
-                {% endcase %} del
-                {{ page.date | date: "%Y" }}
-                </span></p>
-                <p><a href="{{ page.author_url  | prepend: site.baseurl }}">{{ page.author_name | capitalize }}</a> en <a href='{{ "/category/" | append: page.categories.first | prepend: site.baseurl }}'>{{ page.categories.first | capitalize }}</a></p>
-
-            </div>
-        </div><!-- end col -->
-        <div class="col-xs-12 col-sm-4">
-            <div class="social">
-                <p>Comparte este post</p>
-                <div class="social-links">
-                    <a class="social-icon" href="#" data-platform="twitter" data-message="'{{ page.title }}' en el blog de Codium: {{ page.social-message }}" data-url="{{ page.url | prepend: site.baseurl | prepend: site.url }}"><i class="fa fa-twitter"></i></a>
-                    <a class="social-icon" href="#" data-platform="linkedin" data-message="{{ page.social-message }}" data-url="{{ page.url | prepend: site.baseurl | prepend: site.url }}"><i class="fa fa-linkedin"></i></a>
-                </div>
-            </div>
-        </div>
-    </div><!-- end row -->
-    <div class="row">
-        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-            <p>¿Te gusta lo que lees? ¿Quieres que vayamos a tu empresa a impartir una formación?</p>
-            <p>Infórmate de nuestros cursos: <a href="https://www.codium.team/curso-legacy-code.html">Working with Legacy code</a>, <a href="https://www.codium.team/curso-tdd.html">Curso de TDD</a> y <a href="https://www.codium.team/curso-docker.html">Docker</a> </p>
-            <p>&nbsp;</p>
-        </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-2">
+      {% if page.author_avatar %}
+      <img
+        src="{{ site.baseurl }}/img/{{ page.author_avatar }}.jpg"
+        class="user-icon"
+        alt="user-image"
+      />
+      {% else %}
+      <img
+        src="{{ site.baseurl }}/img/codium-icon-black-256x256.png"
+        class="user-icon"
+        alt="user-image"
+      />
+      {% endif %}
     </div>
+    <div class="col-xs-12 col-sm-6">
+      <div class="category-list">
+        <p>
+          Publicado
+          <span>
+            {{ page.date | date: "%-d" }} de {% assign m = page.date | date:
+            "%-m" %} {% case m %} {% when '1' %}Enero {% when '2' %}Febrero {%
+            when '3' %}Marzo {% when '4' %}Abril {% when '5' %}Mayo {% when '6'
+            %}Junio {% when '7' %}Julio {% when '8' %}Augosto {% when '9'
+            %}Septiembre {% when '10' %}Octubre {% when '11' %}Noviembre {% when
+            '12' %}Diciembre {% endcase %} del {{ page.date | date: "%Y" }}
+          </span>
+        </p>
+      </div>
+    </div>
+    <!-- end col -->
+    <div class="col-xs-12 col-sm-4">
+      <div class="social">
+        <p>Comparte este post</p>
+        <div class="social-links">
+          <a
+            class="social-icon"
+            href="#"
+            data-platform="twitter"
+            data-message="'{{ page.title }}' en el blog de Codium: {{ page.social-message }}"
+            data-url="{{ page.url | prepend: site.baseurl | prepend: site.url }}"
+            ><i class="fa fa-twitter"></i
+          ></a>
+          <a
+            class="social-icon"
+            href="#"
+            data-platform="linkedin"
+            data-message="{{ page.social-message }}"
+            data-url="{{ page.url | prepend: site.baseurl | prepend: site.url }}"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end row -->
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+      <p>
+        ¿Te gusta lo que lees? ¿Quieres que vayamos a tu empresa a impartir una
+        formación?
+      </p>
+      <p>
+        Infórmate de nuestros cursos:
+        <a href="https://www.codium.team/curso-legacy-code.html"
+          >Working with Legacy code</a
+        >, <a href="https://www.codium.team/curso-tdd.html">Curso de TDD</a> y
+        <a href="https://www.codium.team/curso-docker.html">Docker</a>
+      </p>
+      <p>&nbsp;</p>
+    </div>
+  </div>
 </div>

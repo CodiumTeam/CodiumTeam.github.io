@@ -9,7 +9,7 @@ feature_image: post-assets/entrevista-luis
 read_time : 5
 ---
 
-Esta semana entrevistamos a Luis Rovirosa, fundador de Codium junto a [Jordi Anguela](2019-01_entrevista-a-jordi-anguela), para conocer mejor a uno de los mentores de la empresa. 
+Esta semana entrevistamos a Luis Rovirosa, fundador de Codium junto a [Jordi Anguela](/2019-01_entrevista-a-jordi-anguela), para conocer mejor a uno de los mentores de la empresa.
 
 ## ¿Por qué decidiste empezar a trabajar en formación?
 
@@ -27,7 +27,7 @@ Por otro lado, lo _fácil que es trabajar con Jordi_, pues siempre tiene una act
 
 Por último porque _me complementa_. Mi energía va a ráfagas y Jordi es mucho más constante. También es capaz de convencerme para hacer aquellas cosas que me dan pereza.
 
-## ¿Qué ofrece Codium que no ofrezcan otras empresas de formación? 
+## ¿Qué ofrece Codium que no ofrezcan otras empresas de formación?
 Codium ofrece formaciones para mejorar las habilidades de programación que te hacen mejor desarrollador, independientemente del lenguaje de programación que utilices en tu día a día.
 
 Nuestros cursos son eminentemente prácticos, porque en programación es fácil pensar que sabes algo aunque no sea así. Nada mejor que practicar para ver si realmente entiendes y has interiorizado el temario.
@@ -36,7 +36,7 @@ Otra cosa que para mí es clave en la formación es que el profesor tenga experi
 
 Quiźa lo que nos diferencia de muchas empresas de formación es que siempre somos dos profesores los que impartimos el curso, de forma que podemos atender de manera más personalizada a las necesidades de cada alumno.
 
-## ¿Qué ventajas tiene TDD respecto a otras prácticas de programación? 
+## ¿Qué ventajas tiene TDD respecto a otras prácticas de programación?
 Una de las cosas que más me gusta de TDD es que hace el software moldeable, ya que aumenta la seguridad de modificar el software sin introducir fallos. Ésto permite que hagamos muchos más refactorings para reducir la complejidad del software y los costes de mantenimiento.
 
 El segundo pilar que me aporta TDD es poderme centrar en los problemas actuales y no en los futuros. Con esto conseguimos reducir la complejidad, los tiempos y el coste de desarrollo.
@@ -44,7 +44,7 @@ El segundo pilar que me aporta TDD es poderme centrar en los problemas actuales 
 ## Habláis mucho de  sostenibilidad y respeto, ¿qué significan para ti?
 Si empezamos por el respeto, es una palabra que me ha marcado mucho desde siempre. Por un lado, respetar a los demás, sus ritmos, sus intereses, sus emociones. Vivimos en un mundo asimétrico y me parece fundamental ofrecer ese espacio a los otros para ser. También hay otro lado que a veces olvidamos, y es el respeto a nosotros mismos. No hacer cosas que nos hagan daño o nos vayan a pasar factura.
 
-Respecto a la sostenibilidad, cada vez tenemos más la costumbre de usar y tirar. Esto, además de ser un desperdicio y muy poco respetuoso con el medio ambiente, no es una actitud que pueda perdurar a lo largo del tiempo. También vemos esta actitud en el software cuando escuchamos frases como “hay que reescribir todo el código” o “hay que tirarlo todo a la basura y empezar desde 0”. 
+Respecto a la sostenibilidad, cada vez tenemos más la costumbre de usar y tirar. Esto, además de ser un desperdicio y muy poco respetuoso con el medio ambiente, no es una actitud que pueda perdurar a lo largo del tiempo. También vemos esta actitud en el software cuando escuchamos frases como “hay que reescribir todo el código” o “hay que tirarlo todo a la basura y empezar desde 0”.
 
 Tanto en la vida personal como en la profesional, Jordi y yo nos planteamos si algo es respetuoso con nosotros en el corto plazo y si es sostenible en el largo plazo.
 
