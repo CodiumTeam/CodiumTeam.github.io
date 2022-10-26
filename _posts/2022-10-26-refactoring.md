@@ -152,8 +152,8 @@ Visual studio code por defecto tiene una serie de refactors automáticos (y apar
 Te dejo algunas extensiones super útiles para favorecer el refactoring
 
 - <a href="https://marketplace.visualstudio.com/items?itemName=nicoespeon.abracadabra">Abracadabra:</a> Permite automatizar ciertos refactorings. Lo malo es que sólo es compatiable con JavaScript y Typescript. Si te interesa ver abracadabra en acción, puedes. Si te interesa ver abracadabra en acción, puedes ver mi charla en MadridJS.
-- <a href="https://marketplace.visualstudio.com/items?itemName=p42ai.refactor">P42:</a>: Tiene varias opciones de refactoring (algunas parecidas a la de Abracadabra) que nos permite aplicar refactor de manera más segura utilizando las últimas funcionalidades de JS.
-- <a href="https://marketplace.visualstudio.com/items?itemName=NuclleaR.vscode-extension-auto-import">Auto import</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=p42ai.refactor">P42:</a> Tiene varias opciones de refactoring (algunas parecidas a la de Abracadabra) que nos permite aplicar refactor de manera más segura utilizando las últimas funcionalidades de JS.
+- <a href="https://marketplace.visualstudio.com/items?itemName=NuclleaR.vscode-extension-auto-import">Auto import:</a> De Auto importa los ficheros, métodos o clases.
 
 Aunque existen muchos otros refactorings que utilizo en mi día a día, espero que este artículo te haya servido para que te introduzcas aún más el refactor en tu día a día.
 
