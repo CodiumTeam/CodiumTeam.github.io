@@ -93,13 +93,20 @@ const [count, add] = useCount(0, 1, 10, () => {
 });
 ```
 
-function useCount(initialValue: number, toAdd: number, counterMax: number, onReset: () => void) {...}
+```javascript
+function useCount(
+  initialValue: number,
+  toAdd: number,
+  limit: number,
+  onReset: () => void
+) {...}
+```
 
 Éste custom hook recibe los siguientes parámetros:
-- initialValue: valor inicial del contador
-- toAdd: valor a sumar. Puede ir el contador de 1 en 1 o de 10 en 10…
-- limit: máximo que puede llegar el contador
-- onReset: callback cuando se resetea el contador
+- `initialValue`: valor inicial del contador
+- `toAdd`: valor a sumar. Puede ir el contador de 1 en 1 o de 10 en 10…
+- `limit`: máximo que puede llegar el contador
+- `onReset`: callback cuando se resetea el contador
 
 Ahora bien, queremos cambiar el contrato de éste custom hook. En vez de tener n parámetros, queremos encapsular esos parámetros en un objeto.
 
@@ -110,7 +117,7 @@ export function useCount(obj) {
  const [value, setValue] = useState(obj.initialValue)
  ```
 
-Dónde su uso quede:
+Dónde su uso quede de la siguiente manera:
 
 ```javascript
 const [count, add] = useCount({
