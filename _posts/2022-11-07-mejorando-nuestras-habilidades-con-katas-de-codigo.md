@@ -8,7 +8,6 @@ feature_image: post-assets/code-katas
 read_time : 5
 ---
 
-## De dónde viene el término *kata*.
 En programación, las ***katas*** **de código** son ejercicios mediante los cuales, a base de repetirlos, se pretende mejorar nuestra forma de desarrollar o practicar una determinada técnica de programación.
 
 Como es probable que hayas imaginado, su nombre hace referencia a las *katas* de las artes marciales. Dentro de éstas, las katas consisten en una secuencia de movimientos (técnicas) que se pueden practicar tanto en solitario como en parejas y cuyo objetivo es entender mejor lo que se está haciendo y mejorar progresivamente, tanto la velocidad como los detalles en la ejecución de las distintas técnicas.
