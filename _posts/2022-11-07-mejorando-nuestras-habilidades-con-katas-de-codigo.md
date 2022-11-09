@@ -35,6 +35,6 @@ Si te animas a practicar con ellas, te dejo por aquí algunos recursos donde pue
 
 Por otro lado, comentarte que en varias comunidades de **Software Crafters**, como la de Murcia o Vigo, se suelen organizar eventos (tanto en remoto como presencial) en los que se propone una kata para resolverla programando en grupo y en distintos lenguajes.
 
-Por último, las chicas de [**CodingIsCaring**](https://www.twitch.tv/codingiscaring) resuelven katas en sus directos de Twitch. Y si no puedes verlas en directo, tienes todos los vídeos en su [canal de YouTube:](https://lnkd.in/ddZJK6jP).
+Por último, las chicas de [**CodingIsCaring**](https://www.twitch.tv/codingiscaring) resuelven katas en sus directos de Twitch. Y si no puedes verlas en directo, tienes todos los vídeos en su [canal de YouTube](https://www.youtube.com/channel/UCWpFtDUVvti2NhnFW-j2w8w/featured).
 
 **Hajime!**
