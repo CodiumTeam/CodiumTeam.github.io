@@ -27,11 +27,11 @@ Por ello, creo que puede ser algo muy interesante para las empresas incorporar e
 Si te animas a practicar con ellas, te dejo por aquí algunos recursos donde puedes encontrar diferentes katas para ir “entrenando”:
 
 
-👉🏻 [CodeKata](codekata.com)
+👉🏻 [CodeKata](http://codekata.com/)
 
-👉🏻 [Coding Dojo](codingdojo.org)
+👉🏻 [Coding Dojo](https://codingdojo.org/)
 
-👉🏻 [Katalyst](katalyst.codurance.com)
+👉🏻 [Katalyst](https://www.codurance.com/katalyst)
 
 Por otro lado, comentarte que en varias comunidades de **Software Crafters**, como la de Murcia o Vigo, se suelen organizar eventos (tanto en remoto como presencial) en los que se propone una kata para resolverla programando en grupo y en distintos lenguajes.
 
