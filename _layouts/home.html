@@ -39,7 +39,8 @@ layout: with-sidebar
                     {% when '11' %}Noviembre
                     {% when '12' %}Diciembre
                 {% endcase %}
-                </a> <i class="link-spacer"></i> {{ post.read_time }} minutos de lectura
+                de {{ post.date | date: "%-Y" }}
+                </a>
             </p>
         </div>
     </article>
