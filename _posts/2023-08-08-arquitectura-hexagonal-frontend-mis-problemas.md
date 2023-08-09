@@ -56,7 +56,9 @@ _UI_
 
 - HomePage: presenta los productos a los usuarios.
 
+<p class="text-center">
 <img src="/img/post-assets/hexagonal-frontend/user-history-hexagonal.png"  alt="Aparecen unos hexagonos en forma de capas. En la capa más interna, está el bloque de Dominio, con Product y ProductRepositorio. Un nivel más arriba, aparece la capa de Aplicación con ListProducts y en la parte más externa los Adapters con HttpProductRepository"/>
+</p>
 
 Una vez definidas las capas, podemos ir a código, pero no sin antes debatir un poco…
 
@@ -103,7 +105,9 @@ En la mayoría de los casos siempre consumo información y la muestro al usuario
 
 ### El purismo extremo: ¿Debe ListProduct devolver un DTO o un objeto de Dominio?
 
+<p class="text-center">
 <img src="/img/post-assets/hexagonal-frontend/hexagonal-en-el-frontend-without-class.png"  alt="Aparecen unos hexagonos en forma de capas con flechas apuntando de una capa externa a la interna. En la capa más externa los adapters con una flecha apuntando a la siguiente capa inmediata, Application y a la vez, la capa de Application apuntando con una flecha a la capa de Domain"/>
+</p>
 
 Si nos fijamos en la imagen y en sus flechas nos muestran las conexiones y comunicación entre las diferentes capas y componentes del sistema. Por tanto, cada capa solo debe llamar a la siguiente inmediata.
 
@@ -458,5 +462,4 @@ Si sientes curiosidad por cómo queda todo, te dejo el repositorio con la featur
     margin: 0 auto 24px auto !important;
     width: 100%;
   }
-
 </style>
