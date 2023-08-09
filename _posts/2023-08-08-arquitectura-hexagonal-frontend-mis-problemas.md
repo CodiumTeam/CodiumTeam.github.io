@@ -448,6 +448,8 @@ export const productsHandlerException = rest.get(
 );
 ```
 
+<p style="margin: 0 0 16px 0;" class="text-center"><small>Puedes ver diferentes maneras de testear la historia de usuario en <a href="https://github.com/CodiumTeam/post-hexagonal-blog-codium/blob/main/src/Home.test.tsx">Github</a></small></p>
+
 El hecho de falsear la respuesta con MSW puede dar la falsa seguridad de que todo está funcionando, por tanto, para sentirme más seguro a la hora de desplegar, acabaría creando, tests e2e (happy path) en un entorno pre o [test de humo](https://www.qalovers.com/2017/12/smoke-test.html) con cypress (o playwright).
 
 Para cerrar, el último motivo por el cuál opto por simplificar las capas al aplicar arquitectura hexagonal es por cuestiones de optimización (tiempo de carga de la web). Pero éste punto hoy me lo saltaré, si te interesa a tí, no dudes en hacérnoslo saber 🙂
