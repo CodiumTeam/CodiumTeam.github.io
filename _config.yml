@@ -37,11 +37,13 @@ nav_list:
     Codium : ['Web de Codium', 'https://www.codium.team', 'fa-home']
     LegacyCode : ['Curso de Legacy Code', 'https://www.codium.team/curso-legacy-code.html', 'fa-graduation-cap']
     TDD: ['Curso de TDD', 'https://www.codium.team/curso-tdd.html', 'fa-graduation-cap']
+    RefactorToPatterns: ['Curso de Refactoring a Patrones', 'https://www.codium.team/curso-refactoring-a-patrones.html', 'fa-graduation-cap']
     Docker: ['Curso de Docker', 'https://www.codium.team/curso-docker.html', 'fa-graduation-cap']
+    QA: ['Curso de Quality Assurance', 'https://www.codium.team/curso-quality-assurance.html', 'fa-graduation-cap']
     Equipo Codium : ['Equipo Codium', 'https://www.codium.team/#team', 'fa-users']
     Newsletter: ['Newsletter', 'https://team.us20.list-manage.com/subscribe?u=13d69f9b710506811a9c84ffc&id=eccad064f9', 'fa-newspaper-o']
     Twitter: ['Follow us', 'https://twitter.com/codiumteam', 'fa-twitter']
-    Youtube: ['Subscribe', 'https://www.youtube.com/channel/UC_G24eVjh5ZBownNfIh2lxw', 'fa-youtube']
+    Youtube: ['Vídeos', 'https://www.youtube.com/channel/UC_G24eVjh5ZBownNfIh2lxw', 'fa-youtube']
 
 single_footer: '<p>The writer community loves your content. Writer &copy; 2016 <a href="/">latest posts</a></p>'
 #footer_links:
