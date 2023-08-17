@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Simplicidad"
-date:   2023-08-17 11:00:00 +0100
+date:   2023-08-17 11:00:00 +0200
 author: luis
 categories: codium
 feature_image: post-assets/simplicity
