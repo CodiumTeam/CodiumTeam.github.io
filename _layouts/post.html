@@ -12,6 +12,11 @@ layout: default
     {% include nav.html %}
 </header>
 
+{% if page.feature_credit %}
+<p class="meta picture_credit">
+    {{ page.feature_credit }}
+</p>
+{% endif %}
 
 <main class="container">
     <div class="row">

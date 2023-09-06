@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "La receta de Codium: resultados, calidad y sostenibilidad"
-date:   2019-01-10 11:30:24 +0100
+#date:   2019-01-10 11:30:24 +0100
 categories: codium
 author: codium
 feature_image: post-assets/receta

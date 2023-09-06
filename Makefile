@@ -6,11 +6,11 @@ default: run
 
 .PHONY: build
 build:
-	$(DOCKER_COMMAND) $(JEKYLL_IMAGE) jekyll build --trace
+	$(DOCKER_COMMAND) $(JEKYLL_IMAGE) jekyll build
 
 .PHONY: run
 run:
-	$(DOCKER_COMMAND) -p 4000:4000 -p 35729:35729 $(JEKYLL_IMAGE) jekyll serve --future --livereload --trace
+	$(DOCKER_COMMAND) -p 4000:4000 -p 35729:35729 $(JEKYLL_IMAGE) jekyll serve --future --drafts --livereload
 
 .PHONY: bundle
 bundle:
