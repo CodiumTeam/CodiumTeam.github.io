@@ -8,8 +8,9 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 4.2.2"
+gem "jekyll", git: 'https://github.com/jekyll/jekyll.git', ref: '1d7236f2c2e62cec0cf48d82ccb2985c31cb8594'
 gem "webrick"
+gem "jekyll-sass-converter", "< 3.0"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.5.1"
