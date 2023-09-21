@@ -1,12 +1,17 @@
 DOCKER_COMMAND = docker run --rm -v ${PWD}:/srv/jekyll -v ${PWD}/vendor/bundle:/usr/local/bundle
+JEKYLL_IMAGE = jekyll/jekyll:4.2.2
 
 .PHONY: default
 default: run
 
 .PHONY: build
 build:
-	$(DOCKER_COMMAND) jekyll/jekyll:3.8 jekyll build
+	$(DOCKER_COMMAND) $(JEKYLL_IMAGE) jekyll build --trace
 
 .PHONY: run
 run:
-	$(DOCKER_COMMAND) -p 4000:4000 jekyll/jekyll:3.8 jekyll serve --future --livereload
+	$(DOCKER_COMMAND) -p 4000:4000 -p 35729:35729 $(JEKYLL_IMAGE) jekyll serve --future --livereload --trace
+
+.PHONY: bundle
+bundle:
+	$(DOCKER_COMMAND) $(JEKYLL_IMAGE) bundle update jekyll
