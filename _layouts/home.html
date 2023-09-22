@@ -19,7 +19,7 @@ layout: with-sidebar
             <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 
             <div class="excerpt">
-                {{ post.excerpt | truncatewords: 28 }}
+                {{ post.excerpt | strip_html | truncatewords: 28 }}
             </div>
 
             <p class="post-footer">
