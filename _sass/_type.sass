@@ -28,10 +28,11 @@ textarea
     -webkit-font-smoothing: antialiased
 
 p
-    margin-bottom: 30px
+    margin: 30px 0
     +font-size(18)
-
     +breakpoint(sm)
+        +font-size(20)
+    +breakpoint(md)
         +font-size(20)
 
     +breakpoint(md)
@@ -84,3 +85,6 @@ ol
 
     li
         margin: 5px 0 5px 20px
+
+.alert p
+  margin: 0
