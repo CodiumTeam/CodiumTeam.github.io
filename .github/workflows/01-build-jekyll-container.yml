@@ -1,0 +1,33 @@
+name: Build Jekyll container
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: [master]
+    paths:
+      - Dockerfile
+      - Gemfile
+      - Gemfile.lock
+  workflow_run:
+    workflows:
+      - "Deploy blog to github pages"
+
+permissions:
+  packages: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Build with Jekyll
+        run: make container
+      - name: Log in to registry
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u $ --password-stdin
+      - name: Push the image
+        run: docker push ghcr.io/codiumteam/jekyll
