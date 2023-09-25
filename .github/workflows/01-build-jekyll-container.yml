@@ -8,6 +8,7 @@ on:
       - Dockerfile
       - Gemfile
       - Gemfile.lock
+      - .github/workflows/01-build-jekyll-container.yml
 
 permissions:
   packages: write
@@ -22,9 +23,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Build with Jekyll
+      - name: Build Jekyll container
         run: make container
       - name: Log in to registry
         run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u $ --password-stdin
-      - name: Push the image
+      - name: Push to container registry
         run: docker push ghcr.io/codiumteam/jekyll
