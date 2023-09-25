@@ -4,46 +4,6 @@ layout: with-sidebar
 
 <div class="home-page-posts animated fadeIn ">
     {% for post in site.posts %}
-
-    <article class="post">
-        <div class="post-preview col-xs-10  no-gutter">
-            {% assign author = site.authors | where: 'short_name', post.author | first %}
-
-            <p class="home-post__meta">
-                <img src='{{ author.avatar }}' alt="{{ author.name | titleize}} profile">
-                <span>
-                    {{ author.name | titleize}}
-                </span>
-            </p>
-
-            <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-
-            <div class="excerpt">
-                {{ post.excerpt | strip_html | truncatewords: 28 }}
-            </div>
-
-            <p class="post-footer">
-                {{ post.date | date: "%-d" }} de
-                {% assign m = post.date | date: "%-m" %}
-                {% case m %}
-                    {% when '1' %}Enero
-                    {% when '2' %}Febrero
-                    {% when '3' %}Marzo
-                    {% when '4' %}Abril
-                    {% when '5' %}Mayo
-                    {% when '6' %}Junio
-                    {% when '7' %}Julio
-                    {% when '8' %}Agosto
-                    {% when '9' %}Septiembre
-                    {% when '10' %}Octubre
-                    {% when '11' %}Noviembre
-                    {% when '12' %}Diciembre
-                {% endcase %}
-                de {{ post.date | date: "%-Y" }}
-                </a>
-            </p>
-        </div>
-    </article>
+        {% include post-preview.html %}
     {% endfor %}
-
 </div><!-- Home page posts -->
