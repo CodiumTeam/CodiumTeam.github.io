@@ -22,3 +22,4 @@ COPY --from=builder /usr/local/bundle /usr/local/bundle
 WORKDIR /jekyll
 
 ENTRYPOINT ["bundle", "exec", "jekyll"]
+# bump: 1 (increment to force pipeline trigger when testing)
