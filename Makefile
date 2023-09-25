@@ -1,17 +1,21 @@
-DOCKER_COMMAND = docker run --rm -v ${PWD}:/srv/jekyll -v ${PWD}/vendor/bundle:/usr/local/bundle
-JEKYLL_IMAGE = jekyll/jekyll:4.2.2
+DOCKER_COMMAND = docker run --rm -v ${PWD}:/jekyll
+JEKYLL_IMAGE = ghcr.io/codiumteam/jekyll:latest
 
 .PHONY: default
 default: run
 
 .PHONY: build
 build:
-	$(DOCKER_COMMAND) $(JEKYLL_IMAGE) jekyll build
+	$(DOCKER_COMMAND) $(JEKYLL_IMAGE) build
 
 .PHONY: run
 run:
-	$(DOCKER_COMMAND) -p 4000:4000 -p 35729:35729 $(JEKYLL_IMAGE) jekyll serve --future --drafts --livereload
+	$(DOCKER_COMMAND) -p 4000:4000 -p 35729:35729 $(JEKYLL_IMAGE) serve --host=0.0.0.0 --future --drafts --livereload
 
-.PHONY: bundle
-bundle:
-	$(DOCKER_COMMAND) $(JEKYLL_IMAGE) bundle update jekyll
+.PHONY: bundle-update
+bundle-update:
+	$(DOCKER_COMMAND) --entrypoint bundle $(JEKYLL_IMAGE) update
+
+.PHONY: container
+container:
+	docker build -t ghcr.io/codiumteam/jekyll:latest .
