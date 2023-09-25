@@ -8,9 +8,6 @@ on:
       - Dockerfile
       - Gemfile
       - Gemfile.lock
-  workflow_run:
-    workflows:
-      - "Deploy blog to github pages"
 
 permissions:
   packages: write
