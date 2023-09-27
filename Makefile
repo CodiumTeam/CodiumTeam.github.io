@@ -14,7 +14,8 @@ run:
 
 .PHONY: bundle-update
 bundle-update:
-	$(DOCKER_COMMAND) --entrypoint bundle $(JEKYLL_IMAGE) update
+	docker build -t codiumteam/jekyll:builder --target=builder .
+	$(DOCKER_COMMAND) --entrypoint bundle codiumteam/jekyll:builder update
 
 .PHONY: container
 container:
