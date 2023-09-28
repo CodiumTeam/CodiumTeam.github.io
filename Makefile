@@ -6,7 +6,7 @@ default: run
 
 .PHONY: build
 build:
-	$(DOCKER_COMMAND) $(JEKYLL_IMAGE) build
+	$(DOCKER_COMMAND) -e JEKYLL_ENV $(JEKYLL_IMAGE) build
 
 .PHONY: run
 run:
