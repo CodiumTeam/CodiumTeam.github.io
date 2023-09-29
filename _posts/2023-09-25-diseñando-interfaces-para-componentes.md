@@ -233,39 +233,53 @@ El secreto para que extender el comportamiento se haga de una manera que tenga u
 
 ### La composición al rescate
 
-Usando los [composables](https://vuejs.org/guide/reusability/composables.html#what-is-a-composable) podemos extender el comportamiento de un componente desde fuera, veamos el siguiente código:
+Usando los [composables](https://vuejs.org/guide/reusability/composables.html#what-is-a-composable) podemos extender el comportamiento de un componente desde fuera, veamos el siguiente ejemplo de código anotado:
 
 ```js
 export function useFilteredTable(data) {
+  // almacenará la versión filtrada de los datos,
+  // se inicializa con una copia de los datos sin filtrar.
   const filteredData = ref(data);
-  const filter = ref('');
 
+  // almacena la búsqueda en curso
+  const search = ref('');
+
+  // dado un string, devuelve el mismo string como un nodo del DOM
+  // aplicando negritas a las coincidencias con la búsqueda
   function highlight(text) {
     return h(Highlight, {
-      searchText: filter.value,
+      searchText: search.value,
       content: text.toString()
     })
   }
 
-  function containsFilter(item) {
-    const search = filter.value.toLowerCase();
-    return Object.values(item).some((value) => {
-      return value.toString().toLowerCase().includes(search);
-    });
-  }
-
-  function setFilter(text) {
-    filter.value = text;
-
-    filteredData.value = data.filter(containsFilter).map((item) => {
-      return Object.fromEntries(
-        Object.entries(item).map(
-          ([k, v]) => [k, highlight(v)]
-        )
+  // por cada pareja clave-valor del item reemplaza el valor
+  // por su versión resaltada en negritas
+  function replaceValuesWithHighlightedText(item) {
+    return Object.fromEntries(
+      Object.entries(item).map(
+        ([k, v]) => [k, highlight(v)]
       )
+    );
+  }
+
+  // comprueba si alguno de los valores contenidos en la fila
+  // contiene la palabra de búsqueda
+  function itemContainsFilter(item) {
+    const searchTextInLowerCase = search.value.toLowerCase();
+    return Object.values(item).some((value) => {
+      const columnValueInLowerText = value.toString().toLowerCase();
+      return columnValueInLowerText.includes(searchTextInLowerCase);
     });
   }
 
+  // permite modificar la búsqueda y recalcular filteredData
+  function setFilter(text) {
+    search.value = text;
+    filteredData.value = data.filter(itemContainsFilter).map(replaceValuesWithHighlightedText);
+  }
+
+  // la API pública de este composable es lo que devolvemos aquí
   return {
     filteredData,
     setFilter,
@@ -277,9 +291,9 @@ Vamos a explicar lo que hace. Llamamos a la función con el set de datos que pas
 
 Posteriormente, vemos la función `highligh(text)`, esta función recibe texto y lo convierte en componentes renderizados que incluyen el texto con resaltado de las coincidencias de búsqueda, su tipo de retorno es [vNode](https://vuejs.org/api/render-function.html#h).
 
-Luego encontramos la función `containsFilter(item)` que devuelve un booleano indicando si un elemento del array de items inicial contiene o no la búsqueda del usuario.
+Luego encontramos la función `itemContainsFilter(item)` que devuelve un booleano indicando si un elemento del array de items inicial contiene o no la búsqueda del usuario.
 
-Por último tenemos `setFilter(text)` que es la forma en la que permitiremos al usuario establecer la búsqueda que quiere aplicar sobre la table. Los valores de retorno son la API pública del comportamiento de filtrado, devolviendo los datos ya filtrados (y resaltados) y la función para modificar la búsqueda.
+Por último tenemos `setFilter(text)` que es la forma en la que permitiremos al usuario establecer la búsqueda que quiere aplicar sobre la tabla. Los valores de retorno son la API pública del comportamiento de filtrado, devolviendo los datos ya filtrados (y resaltados) y la función para modificar la búsqueda.
 
 ```js
 const items = [
