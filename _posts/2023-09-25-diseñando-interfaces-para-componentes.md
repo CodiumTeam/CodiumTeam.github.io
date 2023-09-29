@@ -255,7 +255,7 @@ export function useFilteredTable(data) {
 
   // por cada pareja clave-valor del item reemplaza el valor
   // por su versión resaltada en negritas
-  function replaceValuesWithHighlightedText(item) {
+  function replaceValuesWithHighlightedOccurrences(item) {
     return Object.fromEntries(
       Object.entries(item).map(
         ([k, v]) => [k, highlight(v)]
@@ -276,7 +276,7 @@ export function useFilteredTable(data) {
   // permite modificar la búsqueda y recalcular filteredData
   function setFilter(text) {
     search.value = text;
-    filteredData.value = data.filter(itemContainsFilter).map(replaceValuesWithHighlightedText);
+    filteredData.value = data.filter(itemContainsFilter).map(replaceValuesWithHighlightedOccurrences);
   }
 
   // la API pública de este composable es lo que devolvemos aquí
