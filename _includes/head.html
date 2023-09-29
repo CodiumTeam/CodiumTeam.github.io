@@ -29,11 +29,11 @@
   <meta property="twitter:description" content="{{ page.excerpt|default: site.description | strip_html | strip_newlines | truncate: 160 }}"/>
 
   {% if page.feature_image %}
-  <meta property="og:image" content="{% link {{page.feature_image}} %}" />
-  <meta property="twitter:image" content="{% link {{page.feature_image}} %}" />
+  <meta property="og:image" content="{{ page.feature_image | absolute_url }}" />
+  <meta property="twitter:image" content="{{ page.feature_image | absolute_url }}" />
   {% else %}
-  <meta property="og:image" content="{% link img/og-home-v3.png %}" />
-  <meta property="twitter:image" content="https://blog.codium.team/img/og-home-v3.png" />
+  <meta property="og:image" content="{{ 'img/og-home-v3.png' | absolute_url }}" />
+  <meta property="twitter:image" content="{{ 'img/og-home-v3.png' | absolute_url }}" />
   {% endif %}
 
 
