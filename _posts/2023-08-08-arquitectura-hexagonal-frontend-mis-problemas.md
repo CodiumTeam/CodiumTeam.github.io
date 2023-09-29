@@ -456,7 +456,7 @@ Para cerrar, el último motivo por el cuál opto por simplificar las capas al ap
 
 En resumen, seguimos poniendo en el centro la capa de dominio (y sus reglas de negocio si existiese) pero impulsamos la simplicidad: no necesitamos implementar capas intermedias entre la lógica de la aplicación, la fuente de datos y su representación visual.
 
-Si sientes curiosidad por cómo queda todo, te dejo el repositorio con la feature desarrollada en [Github](https://github.com/CodiumTeam/post-hexagonal-blog-codium) o editarlo en [stackblitz](https://stackblitz.com/edit/vitest-dev-vitest-qyyby2?file=src%2FHome.test.tsx)
+Si sientes curiosidad por cómo queda todo, te dejo el repositorio con la feature desarrollada en [Github](https://github.com/CodiumTeam/blog-examples/tree/main/arquitectura-hexagonal-frontend-mis-problemas) o editarlo en [stackblitz](https://stackblitz.com/edit/vitest-dev-vitest-qyyby2?file=src%2FHome.test.tsx)
 
 <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 <style>
