@@ -6,7 +6,7 @@
   </title>
   <meta
     name="description"
-    content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
+    content="{{ page.excerpt|default: site.description | strip_html | strip_newlines | truncate: 160 }}"
   />
   <meta
     name="keywords"
@@ -17,34 +17,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta property="og:type" content="website" />
-  <meta
-    property="og:url"
-    content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
-  />
-  <meta property="og:title" content="{{ page.title }}" />
-  <meta
-    property="og:description"
-    content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
-  />
-  <meta
-    property="og:image"
-    content="https://blog.codium.team/img/og-home-v3.png"
-  />
-
   <meta property="twitter:card" content="summary_large_image" />
-  <meta
-    property="twitter:url"
-    content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
-  />
+
+  <meta property="og:url" content="{{ page.url | absolute_url }}"/>
+  <meta property="twitter:url" content="{{ page.url | absolute_url }}"/>
+
+  <meta property="og:title" content="{{ page.title }}" />
   <meta property="twitter:title" content="{{ page.title }}" />
-  <meta
-    property="twitter:description"
-    content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
-  />
-  <meta
-    property="twitter:image"
-    content="https://blog.codium.team/img/og-home-v3.png"
-  />
+
+  <meta property="og:description" content="{{ page.excerpt|default: site.description | strip_html | strip_newlines | truncate: 160 }}"/>
+  <meta property="twitter:description" content="{{ page.excerpt|default: site.description | strip_html | strip_newlines | truncate: 160 }}"/>
+
+  {% if page.feature_image %}
+  <meta property="og:image" content="{% link {{page.feature_image}} %}" />
+  <meta property="twitter:image" content="{% link {{page.feature_image}} %}" />
+  {% else %}
+  <meta property="og:image" content="{% link img/og-home-v3.png %}" />
+  <meta property="twitter:image" content="https://blog.codium.team/img/og-home-v3.png" />
+  {% endif %}
+
+
+
+
+
+
+  <link rel="canonical" href="{{ page.url | absolute_url }}" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{% link feed.xml %}" />
+
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
   {% if jekyll.environment == "production" %}
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -56,16 +56,7 @@ window.dataLayer = window.dataLayer || [];
   </script>
   {% endif %}
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-
-  <link
-    rel="canonical"
-    href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
-  />
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}"
-  href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-
   <!--[if lt IE 9]>
-        <script src="{{ "/js/vendor/html5shiv.min.js" | prepend: site.baseurl }}"></script>
-    <![endif]-->
+  <script src="{{ "/js/vendor/html5shiv.min.js" | prepend: site.baseurl }}"></script>
+  <![endif]-->
 </head>
