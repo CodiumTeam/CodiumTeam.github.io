@@ -4,7 +4,7 @@ title:  "Entrevista a Jordi Anguela"
 date:   2019-01-23 08:00:00 +0100
 categories: codium
 author: codium
-feature_image: post-assets/entrevista-jordi
+feature_image: img/post-assets/entrevista-jordi.jpg
 
 read_time : 5
 ---

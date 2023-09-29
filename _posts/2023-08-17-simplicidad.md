@@ -4,7 +4,7 @@ title:  "Simplicidad"
 date:   2023-08-17 11:00:00 +0200
 author: luis
 categories: codium
-feature_image: post-assets/simplicity
+feature_image: img/post-assets/simplicity.jpg
 read_time : 5
 ---
 Es difícil quedarme sólo con un [valor de eXtreme Programming](http://www.extremeprogramming.org/values.html), pues todos me parecen importantes y complementarios. No obstante, últimamente veo muchísima complejidad innecesaria en el código que no hace más que provocar dolor en los programadores, producir errores en producción y generar más complejidad.

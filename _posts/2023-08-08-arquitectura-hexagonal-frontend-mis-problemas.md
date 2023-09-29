@@ -4,7 +4,7 @@ title: "Arquitectura en el Frontend - Mis problemas con Hexagonal"
 date: 2023-08-08 08:00:00 +0100
 author: jose
 categories: codium
-feature_image: post-assets/hexagonal-en-el-frontend
+feature_image: img/post-assets/hexagonal-en-el-frontend.jpg
 
 read_time: 11
 ---

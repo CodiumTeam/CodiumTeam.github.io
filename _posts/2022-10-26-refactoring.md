@@ -4,7 +4,7 @@ title:  "Refactoring"
 date:   2022-10-26 08:00:00 +0100
 author: jose
 categories: codium
-feature_image: post-assets/refactoring-webstorm
+feature_image: img/post-assets/refactoring-webstorm.jpg
 
 read_time : 6
 ---

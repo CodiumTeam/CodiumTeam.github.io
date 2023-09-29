@@ -4,7 +4,7 @@ title:  "Mejorando nuestras habilidades con las katas de código"
 date:   2022-11-08 08:00:00 +0100
 author: concha
 categories: codium
-feature_image: post-assets/code-katas
+feature_image: img/post-assets/code-katas.jpg
 read_time : 5
 ---
 

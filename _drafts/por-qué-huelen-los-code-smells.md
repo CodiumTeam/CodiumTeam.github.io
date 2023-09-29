@@ -3,7 +3,7 @@ layout: post
 title:  "¿Por qué huelen los code smells?"
 date:   2023-09-27 09:00:00 +0200
 author: hugo
-feature_image: post-assets/por-que-huelen-los-code-smells/por-que-huelen-los-code-smells
+feature_image: img/post-assets/por-que-huelen-los-code-smells/por-que-huelen-los-code-smells.jpg
 ---
 
 Hace unas semanas acudí a la PulpoCon 23 y me gustó mucho una ponencia por [Nino Dafonte](https://twitter.com/ninodafonte) en la que entre muchas cosas explicaba por qué los code smells son code smells. A estas alturas casi todos ya conocemos los code smells más habituales y reconocemos los problemas que pueden traer consigo, ¿pero sabemos realmente por qué son tan perniciosos?

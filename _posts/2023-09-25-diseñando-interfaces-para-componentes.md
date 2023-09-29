@@ -4,7 +4,7 @@ title:  "Diseñando interfaces para componentes"
 date:   2023-09-25 09:00:00 +0200
 author: hugo
 categories: codium
-feature_image: post-assets/components-interface-design
+feature_image: img/post-assets/components-interface-design.jpg
 feature_credit: Foto por Saad Salim
 ---
 

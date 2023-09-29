@@ -4,7 +4,7 @@ title:  "TDD en React JS"
 date:   2022-05-26 08:00:00 +0100
 author: jose
 categories: codium
-feature_image: post-assets/tdd-react-js
+feature_image: img/post-assets/tdd-react-js.jpg
 
 read_time : 6
 ---

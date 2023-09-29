@@ -4,7 +4,7 @@ title:  "Software Craftsmanship, la fuerza de la artesanía"
 date:   2019-04-24 15:00:00 +0100
 categories: codium
 author: codium
-feature_image: post-assets/software-craftsmanship/socracan-2018-retrospective-on-the-beach
+feature_image: img/post-assets/software-craftsmanship/socracan-2018-retrospective-on-the-beach.jpg
 
 read_time : 4
 ---

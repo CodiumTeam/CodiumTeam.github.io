@@ -4,7 +4,7 @@ title:  "Mentores, no profesores"
 date:   2019-01-29 19:00:00 +0100
 categories: codium
 author: codium
-feature_image: post-assets/mentoring
+feature_image: img/post-assets/mentoring.jpg
 
 read_time : 2
 ---

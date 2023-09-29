@@ -4,7 +4,7 @@ title:  "La esencia del desarrollo de software ágil"
 date:   2019-05-27 14:00:00 +0100
 categories: codium
 author: luis
-feature_image: post-assets/water
+feature_image: img/post-assets/water.jpg
 
 read_time : 5
 ---
