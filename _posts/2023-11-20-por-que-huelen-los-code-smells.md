@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "¿Por qué huelen los code smells?"
-date:   2023-09-27 09:00:00 +0200
+date:   2023-11-20 09:00:00 +0200
 author: hugo
 feature_image: img/post-assets/por-que-huelen-los-code-smells/por-que-huelen-los-code-smells.jpg
 ---
