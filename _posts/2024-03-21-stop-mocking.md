@@ -11,7 +11,7 @@ read_time: 9
 Antes de continuar leyendo, y para que entiendas el por qué de éste post, te voy a explicar qué pienso o cómo defino los test unitarios.
 
 Los tests unitarios son aquellos que cumplen con el acrónimo FIRST:
- * F: Fast (rápido si tienes mi nivel de inglés)
+ * F: Fast (rápido, por si tienes mi nivel de inglés)
  * I: Independiente o aislado
  * R: repetible
  * S: self-validating (que se auto validan, pasa o no pasa vamos…)
