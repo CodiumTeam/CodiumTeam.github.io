@@ -256,15 +256,15 @@ Para ello ofrezco soluciones:
 - Si mockeas para validar que se haya llamado con los parámetros adecuados porque quieres validar que no se te ha olvidado traducir. [Eslint al rescate](https://github.com/edvardchen/eslint-plugin-i18next), si lo juntas a un precommit hook evitarías que hagan commits de textos sin traducir.
 
 
-Si mockeas otras librerías para validar contenido, estoy seguro que podrías darle una vuelta al test. Por un ejemplo
+Si mockeas otras librerías para validar contenido, estoy seguro que podrías darle una vuelta al test. Veamos otro ejemplo
 
 
 notistack: librería que nos permite mostrar un toast
 
 ```jsx
 const mockEnqueueSnackbar = jest.fn();
-vi.mock('notistack', () => ({
-   ...jest.requireActual('notistack'),
+vi.mock('notistack', async (importOriginal) => ({
+    ...(await importOriginal()),
    useSnackbar: () => ({
        enqueueSnackbar: mockEnqueueSnackbar,
    }),
@@ -288,11 +288,9 @@ Podriamos re-escribir y validar el comportamiento real que vería un usuario.
 test('Show popup message', async() => {
   render(<ShowNotification />);
 
-
   await userEvent.click(screen.getByText('Show now'))
 
-
-   expect(await screen.findByText('Notification works')).toBeVisible();
+  expect(await screen.findByText('Notification works')).toBeVisible();
 });
 ```
 
