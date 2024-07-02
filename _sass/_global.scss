@@ -80,6 +80,7 @@ a {
     border-bottom: solid 1px $brand-secondary-color;
   }
 }
+
 small {
   font-size: 60%;
 }
@@ -87,4 +88,9 @@ small {
   aspect-ratio: 16 / 9;
   width: 100%;
   min-height: 200px;
+}
+
+
+pre.highlight {
+  background-color: #fbfbfb;
 }
