@@ -34,7 +34,7 @@ p {
     @include font-size(20);
   }
   @include breakpoint(md) {
-    @include font-size(20);
+    @include font-size(18);
   }
 }
 pre,
