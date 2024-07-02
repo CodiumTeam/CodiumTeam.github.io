@@ -84,6 +84,27 @@ a {
 small {
   font-size: 60%;
 }
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(38, 42, 56);
+
+  th {
+    background-color: rgb(224, 227, 232);
+  }
+
+  th,
+  td {
+    padding: 2px 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(38, 42, 56);
+  }
+}
+
 .video {
   aspect-ratio: 16 / 9;
   width: 100%;

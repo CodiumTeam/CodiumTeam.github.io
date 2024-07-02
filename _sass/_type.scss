@@ -38,7 +38,8 @@ p {
   }
 }
 pre,
-code {
+code,
+table {
   @include font-size(16);
   @include breakpoint(sm) {
     @include font-size(18);
