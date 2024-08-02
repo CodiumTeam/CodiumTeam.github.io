@@ -1,10 +1,12 @@
 ---
 layout: post
 title:  "A DBT Journey"
-date:   2024-07-02 09:00:00 +0200
+date:   2024-08-02 09:00:00 +0200
 author: hugo
 categories: codium
-read_time : 15
+read_time : 10
+feature_image: img/post-assets/dbt-journey/header.jpg
+
 ---
 
 
